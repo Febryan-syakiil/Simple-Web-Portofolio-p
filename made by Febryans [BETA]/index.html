@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b18">
+  <title>My Portfolio | Biodata & Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background bintang -->
+  <canvas id="starCanvas"></canvas>
+
+  <!-- Loading screen -->
+  <div id="loader" class="loader">
+    <div class="loader-content">
+      <div class="loader-orbit">
+        <div class="loader-planet"></div>
+      </div>
+      <h1>WELCOME TO MY SPACE</h1>
+      <p id="loadingText">Preparing your experience...</p>
+      <div class="progress-track">
+        <div id="progressBar"></div>
+      </div>
+      <span id="progressText">0%</span>
+      <button id="enterButton" class="btn primary" hidden>
+        Enter Website ↗
+      </button>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <a class="logo" href="#home">PORTO<span>.</span></a>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#biodata">Biodata</a>
+      <a href="#projects">Projects</a>
+    </nav>
+
+    <button id="starToggle" class="btn outline">
+      ✦ Star Mode: OFF
+    </button>
+  </header>
+
+  <main>
+    <!-- Home -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">✦ PERSONAL PORTFOLIO</span>
+        <h1>Explore My<br><span>Digital World.</span></h1>
+        <p>
+          Halo! Selamat datang di website pribadi saya.
+          Temukan informasi tentang diri saya dan berbagai
+          project yang telah saya buat.
+        </p>
+        <div class="hero-buttons">
+          <a href="#biodata" class="btn primary">Explore Me ↗</a>
+          <a href="#projects" class="btn outline">View Projects</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="hero-symbol">✦</div>
+        <div class="floating-label">CREATIVE DEVELOPER</div>
+      </div>
+    </section>
+
+    <!-- Biodata -->
+    <section id="biodata" class="section">
+      <div class="section-heading">
+        <span class="eyebrow">01 / ABOUT ME</span>
+        <h2>My <span>Biodata</span></h2>
+        <p>Kenali saya lebih dekat.</p>
+      </div>
+
+      <div class="bio-grid">
+        <article class="card profile-card">
+          <div class="profile-image">
+            <img
+              id="profileImage"
+              src="https://i.pinimg.com/originals/97/55/6b/97556b3f5865b4dc1c3aece334c0eeac.jpg?nii=t"
+              alt="Foto profil"
+            >
+          </div>
+
+          <label for="imageUpload" class="btn outline upload-button">
+            📷 Ganti Foto
+          </label>
+          <input id="imageUpload" type="file"
+                 accept="image/*" hidden>
+
+          <h3 id="profileName">Febryan syakiil</h3>
+          <p id="profileRole">Student • Web Developer</p>
+        </article>
+
+        <article class="card bio-details">
+          <h3>Tentang Saya</h3>
+          <p class="muted">
+            Saya adalah seseorang yang tertarik dengan dunia
+            teknologi, desain, dan pengembangan website.
+            Saya senang mempelajari hal baru dan membuat
+            sesuatu yang kreatif.
+          </p>
+
+          <div class="bio-list">
+            <div><span>Nama</span><strong id="bioName">Febryan syakiil</strong></div>
+            <div><span>Umur</span><strong id="bioAge">17 Tahun</strong></div>
+            <div><span>Lokasi</span><strong id="bioLocation">Indonesia</strong></div>
+            <div><span>Email</span><strong id="bioEmail">febryansyakiil@gmail.com</strong></div>
+            <div><span>Keahlian</span><strong>HTML, CSS, JavaScript, Roblox</strong></div>
+          </div>
+
+          <button id="editBioButton" class="btn primary">
+            ✎ Edit Biodata
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <span class="eyebrow">02 / MY WORK</span>
+        <h2>List <span>Projects</span></h2>
+        <p>Beberapa project yang sudah saya buat.</p>
+      </div>
+
+      <div id="projectGrid" class="project-grid">
+        <article class="card project-card">
+          <div class="project-number">PROJECT 01</div>
+          <div class="project-icon">🌐</div>
+          <h3>Personal Portfolio</h3>
+          <p>
+            Website pribadi untuk menampilkan profil,
+            skill, dan hasil karya.
+          </p>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>JS</span>
+          </div>
+          <a href="#" class="project-link">View Project ↗</a>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-number">PROJECT 02</div>
+          <div class="project-icon">🎮</div>
+          <h3>Mini Game</h3>
+          <p>
+            Game sederhana berbasis browser dengan
+            interaksi dan sistem skor.
+          </p>
+          <div class="tags">
+            <span>JavaScript</span><span>Game</span>
+          </div>
+          <a href="#" class="project-link">View Project ↗</a>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-number">PROJECT 03</div>
+          <div class="project-icon">🚀</div>
+          <h3>Future Project</h3>
+          <p>
+            Tempat untuk menambahkan project terbaru
+            yang sedang kamu kembangkan.
+          </p>
+          <div class="tags">
+            <span>Creative</span><span>Development</span>
+          </div>
+          <a href="#" class="project-link">View Project ↗</a>
+        </article>
+      </div>
+
+      <div class="add-project-area">
+        <button id="addProjectButton" class="btn outline">
+          + Tambah Project
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> My Portfolio.</p>
+    <p>Made with <span>♥</span> and JavaScript, W AI</p>
+  </footer>
+
+  <!-- Modal edit biodata -->
+  <dialog id="bioDialog">
+    <form id="bioForm" class="dialog-content">
+      <h2>Edit Biodata</h2>
+
+      <label>Nama
+        <input name="name" value="Nama Kamu" required>
+      </label>
+      <label>Umur
+        <input name="age" value="17 Tahun" required>
+      </label>
+      <label>Lokasi
+        <input name="location" value="Indonesia" required>
+      </label>
+      <label>Email
+        <input name="email" type="email"
+               value="email@example.com" required>
+      </label>
+
+      <div class="dialog-actions">
+        <button type="button" id="cancelBio" class="btn outline">
+          Batal
+        </button>
+        <button type="submit" class="btn primary">
+          Simpan
+        </button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Modal tambah project -->
+  <dialog id="projectDialog">
+    <form id="projectForm" class="dialog-content">
+      <h2>Tambah Project</h2>
+
+      <label>Nama Project
+        <input name="title" placeholder="Nama project" required>
+      </label>
+      <label>Deskripsi
+        <textarea name="description"
+          placeholder="Ceritakan project kamu..." required></textarea>
+      </label>
+      <label>Teknologi
+        <input name="tech" placeholder="HTML, CSS, JavaScript" required>
+      </label>
+      <label>Link Project
+        <input name="url" type="url"
+          placeholder="https://example.com">
+      </label>
+
+      <div class="dialog-actions">
+        <button type="button" id="cancelProject" class="btn outline">
+          Batal
+        </button>
+        <button type="submit" class="btn primary">
+          Tambahkan
+        </button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
